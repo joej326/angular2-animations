@@ -3,9 +3,15 @@
     <div class="col-xs-12">
       <h1>Animations</h1>
       <button class="btn btn-primary" (click)="onAnimate()">Animate!</button>
-      <button class="btn btn-primary" (click)="onShrink()">Shrink!</button>
+      <button (click)="secondAnimation()" class="btn btn-warning">complex</button>
       <hr>
-      <div></div>
+      <div [@myDivTest]="myState"> <!-- add the name of the trigger on the element and set it equal to
+                                    what you want to run. -->
+      <h1>hi there</h1>
+      </div>
+      <div style="height: 100px; width: 100px" [@secondTest]="complex">
+
+      </div>
     </div>
   </div>
   <hr>
